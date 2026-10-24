@@ -15,6 +15,37 @@
 body{font-family:'DM Sans',Arial,sans-serif;color:#333}.topbar{position:absolute;top:0;left:0;right:0;height:28px;background:transparent;color:#bd3237;z-index:12}.topbar .wrap{justify-content:flex-end}.top-left{display:none}.top-right{gap:14px;font-size:13px;font-weight:700}.site-header{position:relative;top:0;height:120px;background:linear-gradient(180deg,#8f8f8f 1%,#d6d6d6 100%);color:#171717}.nav{height:120px;justify-content:center;gap:42px;width:min(900px,calc(100% - 40px));padding-top:10px}.brand img{width:150px;filter:none}.nav-links{gap:24px;font-size:14px;font-weight:500;color:#171717}.nav-links a:hover{color:#c58219}.nav-cta,.button{background:#e8a92f;color:#262626;border-radius:0}.nav-cta{padding:11px 14px}.hero{min-height:836px;background:url('https://mysrilankadriver.com/wp-content/uploads/2022/10/01-1.png') center center/cover no-repeat;color:#222;display:flex;align-items:flex-start}.hero-content{padding-top:200px;max-width:900px;margin:0 auto;text-align:center}.hero .eyebrow{justify-content:center;color:#d79828}.hero h1{font:700 clamp(42px,5vw,66px)/1.12 'DM Sans',Arial,sans-serif;color:#252525;letter-spacing:-.02em;margin:20px 0}.hero h1 span{color:#d99d32;font:italic 600 clamp(40px,5vw,64px)/1.15 'Playfair Display',Georgia,serif}.hero-actions{justify-content:center}.hero p{margin-left:auto;margin-right:auto}.scroll-cue{display:none}.contact-strip{margin-top:-64px;background:rgba(255,255,255,.96);box-shadow:0 4px 18px #00000012}.contact-strip .wrap{padding:14px 0}.contact-icon{background:#fff4de}.intro-title{text-align:center;padding:20px 0 16px}.intro-title h2{font:700 clamp(32px,4vw,46px)/1.2 'DM Sans',Arial,sans-serif;color:#262626;margin:0}.intro-title em{font:italic 600 clamp(33px,4.2vw,48px)/1.2 'Playfair Display',Georgia,serif;color:#424242}.intro-grid{margin-top:42px;gap:7%}.intro-photo{padding:0}.intro-photo:after{display:none}.intro-photo img{height:420px;object-fit:cover}.section h2{color:#292929}.section-kicker{color:#c58922}.why{background:#fff}.benefits{gap:20px}.benefit{box-shadow:0 4px 20px #0000000d;border-bottom:0;text-align:center}.benefit-icon{margin:0 auto;background:#fff5e5;color:#d49a30}.benefit h3{color:#333}.package-grid{grid-template-columns:repeat(3,1fr)}.package-card{height:340px}.package-card:before{background:linear-gradient(0deg,rgba(0,0,0,.78),rgba(0,0,0,.02) 75%),var(--photo) center/cover}.package-content h3{font:600 23px/1.25 'DM Sans',Arial,sans-serif}.offer{background:#373737}.offer .section-kicker{color:#f1b341}.book{background:#fff}.book-grid{box-shadow:none}.book-visual{background-image:url('https://mysrilankadriver.com/wp-content/uploads/2022/09/Travel-Agency8-1.png')}.reviews{background:#fff}.review{box-shadow:0 3px 16px #0000000d}.faq{background:#f8f8f8}.footer{background:#202020}.footer-logo{filter:none}.last-cta{background:#ededed}.last-cta .button{background:#e6a52f;color:#222}
 @media(max-width:900px){.site-header{height:120px}.nav{height:120px;justify-content:space-between}.nav-links{gap:14px}.nav-links a:not(.nav-cta){display:none}.menu-btn{display:block;color:#111}.nav-links.open{top:100px;left:20px;right:20px;background:#d2d2d2;color:#111}.hero{min-height:760px}.hero-content{padding-top:165px}}
 @media(max-width:640px){.nav{height:120px}.brand img{width:155px}.hero{min-height:690px;background-position:center center}.hero-content{padding-top:170px}.hero h1{font-size:42px}.hero h1 span{font-size:40px}.contact-strip{margin-top:-30px}.intro-title{padding-top:16px}.intro-title h2{font-size:29px}.intro-title em{font-size:29px}.intro-grid{margin-top:25px}.intro-photo img{height:300px}}
+
+/* Motion system */
+html{scroll-behavior:smooth;scroll-padding-top:24px}
+@keyframes header-enter{from{opacity:0;transform:translateY(-16px)}to{opacity:1;transform:translateY(0)}}
+@keyframes hero-enter{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+@keyframes hero-zoom{from{background-size:108% auto}to{background-size:100% auto}}
+@keyframes float-soft{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+@keyframes pulse-soft{0%,100%{box-shadow:0 0 0 0 rgba(32,198,106,.38)}50%{box-shadow:0 0 0 11px rgba(32,198,106,0)}}
+@keyframes reveal-up{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+@keyframes faq-open{from{opacity:0;transform:translateY(-5px)}to{opacity:1;transform:translateY(0)}}
+.site-header{animation:header-enter .7s cubic-bezier(.2,.75,.25,1) both}
+.hero{animation:hero-zoom 1.8s ease-out both;background-size:cover}
+.hero .eyebrow,.hero h1,.hero p,.hero-actions{animation:hero-enter .75s cubic-bezier(.2,.75,.25,1) both}
+.hero h1{animation-delay:.12s}.hero p{animation-delay:.24s}.hero-actions{animation-delay:.36s}
+.brand img{transition:transform .35s ease,filter .35s ease}.brand:hover img{transform:scale(1.045)}
+.nav-links a{transition:color .2s ease,transform .2s ease}.nav-links a:hover{transform:translateY(-2px)}
+.button,.nav-cta{transition:transform .22s ease,background-color .22s ease,box-shadow .22s ease,color .22s ease}.button:hover,.nav-cta:hover{transform:translateY(-3px);box-shadow:0 8px 18px rgba(27,37,30,.18)}.button:active,.nav-cta:active{transform:translateY(-1px) scale(.98)}
+.contact-item{transition:transform .25s ease,color .25s ease}.contact-item:hover{transform:translateY(-3px);color:#bd851f}.contact-icon{transition:transform .3s ease,background-color .3s ease}.contact-item:hover .contact-icon{transform:rotate(-8deg) scale(1.08);background:#fae9c6}
+.intro-photo img{transition:transform .75s cubic-bezier(.2,.75,.25,1)}.intro-photo:hover img{transform:scale(1.025)}
+.benefit,.package-card,.review{transition:transform .35s cubic-bezier(.2,.75,.25,1),box-shadow .35s ease}.benefit:hover,.review:hover{transform:translateY(-6px);box-shadow:0 12px 30px rgba(24,43,34,.13)}
+.package-card:before{transition:transform .8s cubic-bezier(.2,.75,.25,1),filter .45s ease}.package-card:hover:before{transform:scale(1.06);filter:saturate(1.08)}.package-card .text-link{display:inline-block;transition:transform .25s ease,color .25s ease}.package-card:hover .text-link{transform:translateX(5px);color:#fff}
+.offer-badge{transition:transform .4s ease,background-color .4s ease}.offer-badge:hover{transform:rotate(0) scale(1.06);background:#ffffff0c}
+.book-visual{background-size:cover;transition:background-size .6s ease}.book-grid:hover .book-visual{background-size:105% auto}
+.review .avatar{transition:transform .3s ease}.review:hover .avatar{transform:scale(1.08)}
+.faq details{transition:background-color .25s ease,box-shadow .25s ease}.faq details[open]{background:#fffdf7;box-shadow:0 5px 16px rgba(30,43,34,.06)}.faq details[open]>p{animation:faq-open .3s ease both}.faq summary{transition:color .2s ease}.faq summary:hover{color:#bd851f}
+.footer a{transition:color .2s ease,transform .2s ease}.footer a:hover{color:#f2bc4c}.socials a{transition:transform .25s ease,background-color .25s ease,border-color .25s ease}.socials a:hover{transform:translateY(-3px);background:#e8a92f;border-color:#e8a92f;color:#222}
+.menu-btn{transition:transform .25s ease,color .25s ease}.menu-btn:active{transform:scale(.9)}.nav-links.open{animation:reveal-up .25s ease both}
+.whatsapp{animation:pulse-soft 2.4s ease-out infinite, float-soft 3.2s ease-in-out infinite;transition:transform .25s ease,background-color .25s ease}.whatsapp:hover{transform:scale(1.1);background:#17b85d}
+.motion-ready .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.75,.25,1);transition-delay:var(--reveal-delay,0ms)}.motion-ready .reveal.is-visible{opacity:1;transform:translateY(0)}
+@media(max-width:640px){.hero{animation:none;background-size:cover}.hero .eyebrow,.hero h1,.hero p,.hero-actions{animation-duration:.6s}.nav-links.open{transform-origin:top;animation:reveal-up .25s ease both}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.motion-ready .reveal{opacity:1;transform:none}}
 </style>
 </head>
 <body>
@@ -46,4 +77,20 @@ body{font-family:'DM Sans',Arial,sans-serif;color:#333}.topbar{position:absolute
 <footer class="footer"><div class="wrap"><div class="footer-grid"><div><img class="footer-logo" src="https://mysrilankadriver.com/wp-content/uploads/2022/10/logo-e1666207292445.png" alt="My Driver in Sri Lanka"><p>A local driver, thoughtful guide and friend for discovering the best of Sri Lanka.</p><div class="socials"><a href="https://facebook.com/profile.php?id=100057668019004" aria-label="Facebook">f</a><a href="https://tripadvisor.com/Attraction_Review-g297898-d7187035-Reviews-My_Driver_in_Sri_Lanka_Day_Tours-Yatiyana_Western_Province.html" aria-label="Tripadvisor">✳</a></div></div><div><h3>Explore</h3><ul><li><a href="#top">Home</a></li><li><a href="#packages">Tour packages</a></li><li><a href="#about">About Sam</a></li><li><a href="#reviews">Guest reviews</a></li></ul></div><div><h3>Useful links</h3><ul><li><a href="https://eta.gov.lk/slvisa/">Sri Lanka ETA</a></li><li><a href="https://srilanka.travel/">Tourism office</a></li><li><a href="https://distancefromto.net/">Distance calculator</a></li><li><a href="#contact">Contact us</a></li></ul></div><div><h3>Say hello</h3><p>Let us help you experience the best of this island.</p><ul><li><a href="tel:+94772635814">+94 77 263 5814</a></li><li><a href="tel:+94715666619">+94 71 566 6619</a></li><li><a href="mailto:samanthadiscover@gmail.com">samanthadiscover@gmail.com</a></li></ul></div></div><div class="copyright"><span>© 2026 My Driver in Lanka · All rights reserved.</span><span>Made with care in Sri Lanka</span></div></div></footer>
 <a class="whatsapp" href="https://wa.me/94772635814" aria-label="Message us on WhatsApp">◔</a>
 <script>const menu=document.querySelector('.menu-btn'),links=document.querySelector('.nav-links');menu.addEventListener('click',()=>{const open=links.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.textContent=open?'×':'☰'});links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='☰'}));document.querySelector('#tour-form').addEventListener('submit',e=>{e.preventDefault();document.querySelector('#form-note').textContent='Thanks for getting in touch! Connect this form to your email service to receive enquiries.';document.querySelector('#form-note').style.color='#257454'});</script>
-</body></html>
+<script>
+(()=>{
+  const reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(reduced||!('IntersectionObserver' in window)) return;
+  const selectors='.intro-title,.intro-photo,.intro-copy,.center,.benefit,.package-card,.offer .wrap > div,.book-grid > div,.review,.faq details,.last-cta .wrap > *, .footer-grid > div';
+  const targets=[...document.querySelectorAll(selectors)];
+  document.querySelectorAll('.benefits,.package-grid,.review-grid,.faq-list,.footer-grid').forEach(group=>{
+    [...group.children].forEach((el,i)=>el.style.setProperty('--reveal-delay',`${Math.min(i*85,340)}ms`));
+  });
+  document.body.classList.add('motion-ready');
+  targets.forEach(el=>el.classList.add('reveal'));
+  const observer=new IntersectionObserver((entries,obs)=>entries.forEach(entry=>{
+    if(entry.isIntersecting){entry.target.classList.add('is-visible');obs.unobserve(entry.target)}
+  }),{threshold:.12,rootMargin:'0px 0px -35px 0px'});
+  targets.forEach(el=>observer.observe(el));
+})();
+</script></body></html>
