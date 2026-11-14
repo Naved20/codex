@@ -93,6 +93,236 @@ a,abbr,acronym,address,applet,b,big,blockquote,body,center,cite,code,dd,del,dfn,
 .et_pb_bg_layout_light.et_pb_module.et_pb_button{color:#2ea3f2}.et_pb_module.et_pb_button{display:inline-block;color:inherit}.et_pb_button_module_wrapper.et_pb_button_alignment_left{text-align:left}.et_pb_button_module_wrapper.et_pb_button_alignment_right{text-align:right}.et_pb_button_module_wrapper.et_pb_button_alignment_center{text-align:center}.et_pb_button_module_wrapper>a{display:inline-block}@media (max-width:980px){.et_pb_button_module_wrapper.et_pb_button_alignment_tablet_left{text-align:left}.et_pb_button_module_wrapper.et_pb_button_alignment_tablet_right{text-align:right}.et_pb_button_module_wrapper.et_pb_button_alignment_tablet_center{text-align:center}}@media (max-width:767px){.et_pb_button_module_wrapper.et_pb_button_alignment_phone_left{text-align:left}.et_pb_button_module_wrapper.et_pb_button_alignment_phone_right{text-align:right}.et_pb_button_module_wrapper.et_pb_button_alignment_phone_center{text-align:center}}
 .et_pb_button[data-icon]:not([data-icon=""]):after{content:attr(data-icon)}@media (max-width:980px){.et_pb_button[data-icon-tablet]:not([data-icon-tablet=""]):after{content:attr(data-icon-tablet)}}@media (max-width:767px){.et_pb_button[data-icon-phone]:not([data-icon-phone=""]):after{content:attr(data-icon-phone)}}
 /*# sourceURL=divi-dynamic-critical-inline-css */
+
+/* Modern FAQ Accordion Styling */
+.faq-section-wrapper {
+  max-width: 980px;
+  margin: 50px auto 40px auto;
+  padding: 0 20px;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+.faq-header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+.faq-badge {
+  display: inline-block;
+  background: #fbf5e6;
+  color: #b47c1b;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  padding: 5px 15px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+}
+.faq-header h2 {
+  font-size: 32px !important;
+  font-weight: 700 !important;
+  color: #17392f !important;
+  margin: 0 0 10px 0 !important;
+  line-height: 1.3 !important;
+}
+.faq-header p {
+  font-size: 15px;
+  color: #64748b;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+.faq-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.faq-item {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+}
+.faq-item:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 5px 14px rgba(0,0,0,0.04);
+}
+.faq-item[open] {
+  border-color: #0b7285;
+  box-shadow: 0 8px 20px rgba(11, 114, 133, 0.08);
+}
+.faq-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 22px;
+  font-size: 15.5px;
+  font-weight: 600;
+  color: #1e293b;
+  cursor: pointer;
+  user-select: none;
+  list-style: none;
+  transition: color 0.2s;
+}
+.faq-summary::-webkit-details-marker {
+  display: none;
+}
+.faq-summary:hover {
+  color: #0b7285;
+}
+.faq-item[open] .faq-summary {
+  color: #0b7285;
+  border-bottom: 1px solid #f1f5f9;
+}
+.faq-icon {
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #f1f5f9;
+  flex-shrink: 0;
+  margin-left: 15px;
+  transition: transform 0.25s ease, background 0.2s;
+}
+.faq-item[open] .faq-icon {
+  transform: rotate(180deg);
+  background: #e0f2fe;
+}
+.faq-icon svg {
+  width: 13px;
+  height: 13px;
+  stroke: #475569;
+  transition: stroke 0.2s;
+}
+.faq-item[open] .faq-icon svg {
+  stroke: #0284c7;
+}
+.faq-content {
+  padding: 16px 22px 20px 22px;
+  font-size: 14.5px;
+  line-height: 1.7;
+  color: #475569;
+  background: #fafbfa;
+}
+.faq-content p {
+  margin: 0;
+  padding: 0;
+}
+.faq-content strong {
+  color: #1e293b;
+}
+
+/* Modern High-Converting CTA Banner */
+.modern-cta-section {
+  max-width: 1040px;
+  margin: 40px auto 30px auto;
+  padding: 0 20px;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+.modern-cta-card {
+  background: linear-gradient(135deg, #17392f 0%, #204e3f 55%, #14352a 100%);
+  border-radius: 16px;
+  padding: 45px 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  box-shadow: 0 14px 35px rgba(23, 57, 47, 0.22);
+  position: relative;
+  overflow: hidden;
+}
+.modern-cta-text {
+  flex: 1;
+  color: #ffffff;
+}
+.modern-cta-tag {
+  display: inline-block;
+  color: #e8a92f;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.modern-cta-title {
+  font-size: 30px !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+  margin: 0 0 10px 0 !important;
+  line-height: 1.25 !important;
+}
+.modern-cta-desc {
+  font-size: 15px;
+  color: #d1fae5;
+  margin: 0;
+  max-width: 520px;
+  line-height: 1.6;
+}
+.modern-cta-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.btn-primary-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #e8a92f;
+  color: #17392f !important;
+  font-weight: 700;
+  font-size: 14.5px;
+  padding: 13px 26px;
+  border-radius: 8px;
+  text-decoration: none !important;
+  transition: all 0.25s ease;
+  box-shadow: 0 5px 15px rgba(232, 169, 47, 0.3);
+}
+.btn-primary-cta:hover {
+  background: #f5b73d;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(232, 169, 47, 0.4);
+}
+.btn-whatsapp-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  font-weight: 600;
+  font-size: 14.5px;
+  padding: 13px 22px;
+  border-radius: 8px;
+  text-decoration: none !important;
+  backdrop-filter: blur(8px);
+  transition: all 0.25s ease;
+}
+.btn-whatsapp-cta:hover {
+  background: rgba(255, 255, 255, 0.22);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-2px);
+}
+@media (max-width: 860px) {
+  .modern-cta-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px 24px;
+  }
+  .modern-cta-title {
+    font-size: 24px !important;
+  }
+  .modern-cta-actions {
+    width: 100%;
+  }
+  .btn-primary-cta, .btn-whatsapp-cta {
+    width: 100%;
+    justify-content: center;
+  }
+}
 </style>
 <link rel='preload' id='divi-dynamic-late-css' href='https://mysrilankadriver.com/wp-content/et-cache/14/et-divi-dynamic-tb-49-tb-57-14-late.css?ver=1792121376' as='style' media='all' onload="this.onload=null;this.rel='stylesheet'" />
 <link rel='preload' id='divi-dynamic-css' href='https://mysrilankadriver.com/wp-content/et-cache/14/et-divi-dynamic-tb-49-tb-57-14.css?ver=1792121376' as='style' media='all' onload="this.onload=null;this.rel='stylesheet'" />
@@ -165,7 +395,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				}
 			</style><link rel='stylesheet' id='ti-widget-css-tripadvisor-css' href='https://mysrilankadriver.com/wp-content/uploads/trustindex-tripadvisor-widget.css?ver=1710995719' media='all' />
 <link rel='stylesheet' id='wpforms-modern-full-css' href='https://mysrilankadriver.com/wp-content/plugins/wpforms-lite/assets/css/integrations/divi/wpforms-modern-full.min.css?ver=1.8.5.3' media='all' />
-<link rel="stylesheet" href="./css/capsule-header.css" />
+
 </head>
 <body class="home wp-singular page-template-default page page-id-14 wp-theme-Divi et-tb-has-template et-tb-has-header et-tb-has-footer et_pb_button_helper_class et_cover_background et_pb_gutter windows et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db">
 	<div id="page-container">
@@ -986,104 +1216,156 @@ Sam organised a driver and gave us good suggestions for our Sri Lanka trip. Prak
 				
 				
 				
-			</div>[/et_pb_row]<div class="et_pb_module et_pb_toggle et_pb_toggle_0 et_pb_toggle_item  et_pb_toggle_close">
-				
-				
-				
-				
-				<h5 class="et_pb_toggle_title">1. Do I need a driver to travel around Sri Lanka?</h5>
-				<div class="et_pb_toggle_content clearfix"><p>While it’s possible to use buses and trains, <strong>most travellers choose a private driver in Sri Lanka for comfort, safety, and flexibility.</strong> Distances can be long and public transport confusing—especially for families or first-time visitors. With My Driver in Sri Lanka, your driver is experienced, professional, and familiar with all routes.</p></div>
-			</div><div class="et_pb_module et_pb_toggle et_pb_toggle_1 et_pb_toggle_item  et_pb_toggle_close">
-				
-				
-				
-				
-				<h5 class="et_pb_toggle_title">2. How much does it cost to hire a private driver in Sri Lanka?</h5>
-				<div class="et_pb_toggle_content clearfix"><p>The cost depends on the number of days, vehicle type, and season. Prices start from <strong>€60 per day</strong> for a private driver with an air-conditioned car, including fuel. We offer clear, upfront pricing with no hidden fees. Send us your travel details for an exact quote.</p></div>
-			</div><div class="et_pb_module et_pb_toggle et_pb_toggle_2 et_pb_toggle_item  et_pb_toggle_close">
-				
-				
-				
-				
-				<h5 class="et_pb_toggle_title">3. Is it safe to hire a driver in Sri Lanka?</h5>
-				<div class="et_pb_toggle_content clearfix"><p>Yes. Hiring a licensed, English-speaking local driver is one of the safest ways to explore the country. My Driver in Sri Lanka ensures all drivers are professional, reliable, and fully insured.</p></div>
-			</div><div class="et_pb_module et_pb_toggle et_pb_toggle_3 et_pb_toggle_item  et_pb_toggle_close">
-				
-				
-				
-				
-				<h5 class="et_pb_toggle_title">4. Can I hire a driver for the whole trip in Sri Lanka?</h5>
-				<div class="et_pb_toggle_content clearfix"><p>Absolutely! <strong>Many travellers book one driver for the entire itinerar</strong>y, allowing smooth travel, flexible stops, and insider tips. This is ideal for multi-city trips and families.</p></div>
-			</div><div class="et_pb_module et_pb_toggle et_pb_toggle_4 et_pb_toggle_item  et_pb_toggle_close">
-				
-				
-				
-				
-				<h5 class="et_pb_toggle_title">5. Do Sri Lanka drivers speak English?</h5>
-				<div class="et_pb_toggle_content clearfix"><p>Yes. Our drivers speak good conversational English and can assist with directions, timing, and local recommendations throughout your journey.</p></div>
-			</div><div class="et_pb_module et_pb_toggle et_pb_toggle_5 et_pb_toggle_item  et_pb_toggle_close">
-				
-				
-				
-				
-				<h5 class="et_pb_toggle_title">6. Is a private driver better than taxis or Uber in Sri Lanka?</h5>
-				<div class="et_pb_toggle_content clearfix"><p>For short trips, taxis or ride-hailing apps can work. But for longer distances and multi-day travel, a private driver is more reliable, cost-effective, and stress-free.</p></div>
-			</div><div class="et_pb_module et_pb_toggle et_pb_toggle_6 et_pb_toggle_item  et_pb_toggle_close">
-				
-				
-				
-				
-				<h5 class="et_pb_toggle_title">7. Can a driver help plan my Sri Lanka itinerary?</h5>
-				<div class="et_pb_toggle_content clearfix"><p>Yes! A local driver can <strong>suggest efficient routes, sightseeing stops, hidden gems, and timing</strong>, making your journey smooth and memorable.</p></div>
-			</div><div class="et_pb_module et_pb_toggle et_pb_toggle_7 et_pb_toggle_item  et_pb_toggle_close">
-				
-				
-				
-				
-				<h5 class="et_pb_toggle_title">8. Do you provide airport transfers in Sri Lanka?</h5>
-				<div class="et_pb_toggle_content clearfix"><p>Yes. We offer airport transfers from Colombo International Airport to Negombo, Colombo, and all major destinations across Sri Lanka.</p></div>
-			</div><div class="et_pb_module et_pb_toggle et_pb_toggle_8 et_pb_toggle_item  et_pb_toggle_close">
-				
-				
-				
-				
-				<h5 class="et_pb_toggle_title">9. Is Sri Lanka suitable for travelling with kids?</h5>
-				<div class="et_pb_toggle_content clearfix"><p>Yes! Sri Lanka is family-friendly. Travelling with a private driver and comfortable car makes journeys easier and more enjoyable for children and elderly family members.</p></div>
-			</div><div class="et_pb_module et_pb_toggle et_pb_toggle_9 et_pb_toggle_item  et_pb_toggle_close">
-				
-				
-				
-				
-				<h5 class="et_pb_toggle_title">10. Can I travel Sri Lanka without a car?</h5>
-				<div class="et_pb_toggle_content clearfix"><p>You can, but it often <strong>involves multiple buses, trains, and long travel times</strong>. Most visitors prefer hiring a private driver in Sri Lanka to save time and avoid stress.</p></div>
-			</div><div class="et_pb_module et_pb_toggle et_pb_toggle_10 et_pb_toggle_item  et_pb_toggle_close">
-				
-				
-				
-				
-				<h5 class="et_pb_toggle_title">11. What type of vehicles are used?</h5>
-				<div class="et_pb_toggle_content clearfix"><p>We provide <strong>air-conditioned, well-maintained vehicles</strong> suitable for couples, families, or small groups. Vehicle type depends on your group size and luggage.</p></div>
-			</div><div class="et_pb_module et_pb_toggle et_pb_toggle_11 et_pb_toggle_item  et_pb_toggle_close">
-				
-				
-				
-				
-				<h5 class="et_pb_toggle_title">12. How far in advance should I book a driver in Sri Lanka?</h5>
-				<div class="et_pb_toggle_content clearfix"><p>We recommend booking<strong> at least a few weeks in advance</strong>, especially during peak travel seasons (December–April and July–August), to secure your preferred driver and vehicle.</p></div>
-			</div><div class="et_pb_module et_pb_toggle et_pb_toggle_12 et_pb_toggle_item  et_pb_toggle_close">
-				
-				
-				
-				
-				<h5 class="et_pb_toggle_title">13. Are fuel and driver expenses included in the price?</h5>
-				<div class="et_pb_toggle_content clearfix"><p><strong>Yes. Our pricing includes driver fees and fuel.</strong> Any extras, like entrance tickets or accommodation for overnight trips, are discussed clearly upfront.</p></div>
-			</div><div class="et_pb_module et_pb_toggle et_pb_toggle_13 et_pb_toggle_item  et_pb_toggle_close">
-				
-				
-				
-				
-				<h5 class="et_pb_toggle_title">14. Why book with My Driver in Sri Lanka?</h5>
-				<div class="et_pb_toggle_content clearfix"><p>My Driver in Sri Lanka offers trusted, professional drivers, personalized itineraries, and a stress-free travel experience. We focus on slow, meaningful journeys, helping you explore the country safely and comfortably.</p></div>
+			</div>
+			
+			<!-- Modern FAQ Section -->
+			<div class="faq-section-wrapper" id="faq">
+				<div class="faq-header">
+					<span class="faq-badge">Got Questions?</span>
+					<h2>Frequently Asked Questions</h2>
+					<p>Everything you need to know about booking a private driver, costs, itineraries, and exploring Sri Lanka safely.</p>
+				</div>
+				<div class="faq-grid">
+					<details class="faq-item">
+						<summary class="faq-summary">
+							<span>1. Do I need a driver to travel around Sri Lanka?</span>
+							<span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+						</summary>
+						<div class="faq-content">
+							<p>While it’s possible to use buses and trains, <strong>most travellers choose a private driver in Sri Lanka for comfort, safety, and flexibility.</strong> Distances can be long and public transport confusing—especially for families or first-time visitors. With My Driver in Sri Lanka, your driver is experienced, professional, and familiar with all routes.</p>
+						</div>
+					</details>
+
+					<details class="faq-item">
+						<summary class="faq-summary">
+							<span>2. How much does it cost to hire a private driver in Sri Lanka?</span>
+							<span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+						</summary>
+						<div class="faq-content">
+							<p>The cost depends on the number of days, vehicle type, and season. Prices start from <strong>€60 per day</strong> for a private driver with an air-conditioned car, including fuel. We offer clear, upfront pricing with no hidden fees. Send us your travel details for an exact quote.</p>
+						</div>
+					</details>
+
+					<details class="faq-item">
+						<summary class="faq-summary">
+							<span>3. Is it safe to hire a driver in Sri Lanka?</span>
+							<span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+						</summary>
+						<div class="faq-content">
+							<p>Yes. Hiring a licensed, English-speaking local driver is one of the safest ways to explore the country. My Driver in Sri Lanka ensures all drivers are professional, reliable, and fully insured.</p>
+						</div>
+					</details>
+
+					<details class="faq-item">
+						<summary class="faq-summary">
+							<span>4. Can I hire a driver for the whole trip in Sri Lanka?</span>
+							<span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+						</summary>
+						<div class="faq-content">
+							<p>Absolutely! <strong>Many travellers book one driver for the entire itinerary</strong>, allowing smooth travel, flexible stops, and insider tips. This is ideal for multi-city trips and families.</p>
+						</div>
+					</details>
+
+					<details class="faq-item">
+						<summary class="faq-summary">
+							<span>5. Do Sri Lanka drivers speak English?</span>
+							<span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+						</summary>
+						<div class="faq-content">
+							<p>Yes. Our drivers speak good conversational English and can assist with directions, timing, and local recommendations throughout your journey.</p>
+						</div>
+					</details>
+
+					<details class="faq-item">
+						<summary class="faq-summary">
+							<span>6. Is a private driver better than taxis or Uber in Sri Lanka?</span>
+							<span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+						</summary>
+						<div class="faq-content">
+							<p>For short trips, taxis or ride-hailing apps can work. But for longer distances and multi-day travel, a private driver is more reliable, cost-effective, and stress-free.</p>
+						</div>
+					</details>
+
+					<details class="faq-item">
+						<summary class="faq-summary">
+							<span>7. Can a driver help plan my Sri Lanka itinerary?</span>
+							<span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+						</summary>
+						<div class="faq-content">
+							<p>Yes! A local driver can <strong>suggest efficient routes, sightseeing stops, hidden gems, and timing</strong>, making your journey smooth and memorable.</p>
+						</div>
+					</details>
+
+					<details class="faq-item">
+						<summary class="faq-summary">
+							<span>8. Do you provide airport transfers in Sri Lanka?</span>
+							<span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+						</summary>
+						<div class="faq-content">
+							<p>Yes. We offer airport transfers from Colombo International Airport to Negombo, Colombo, and all major destinations across Sri Lanka.</p>
+						</div>
+					</details>
+
+					<details class="faq-item">
+						<summary class="faq-summary">
+							<span>9. Is Sri Lanka suitable for travelling with kids?</span>
+							<span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+						</summary>
+						<div class="faq-content">
+							<p>Yes! Sri Lanka is family-friendly. Travelling with a private driver and comfortable car makes journeys easier and more enjoyable for children and elderly family members.</p>
+						</div>
+					</details>
+
+					<details class="faq-item">
+						<summary class="faq-summary">
+							<span>10. Can I travel Sri Lanka without a car?</span>
+							<span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+						</summary>
+						<div class="faq-content">
+							<p>You can, but it often <strong>involves multiple buses, trains, and long travel times</strong>. Most visitors prefer hiring a private driver in Sri Lanka to save time and avoid stress.</p>
+						</div>
+					</details>
+
+					<details class="faq-item">
+						<summary class="faq-summary">
+							<span>11. What type of vehicles are used?</span>
+							<span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+						</summary>
+						<div class="faq-content">
+							<p>We provide <strong>air-conditioned, well-maintained vehicles</strong> suitable for couples, families, or small groups. Vehicle type depends on your group size and luggage.</p>
+						</div>
+					</details>
+
+					<details class="faq-item">
+						<summary class="faq-summary">
+							<span>12. How far in advance should I book a driver in Sri Lanka?</span>
+							<span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+						</summary>
+						<div class="faq-content">
+							<p>We recommend booking<strong> at least a few weeks in advance</strong>, especially during peak travel seasons (December–April and July–August), to secure your preferred driver and vehicle.</p>
+						</div>
+					</details>
+
+					<details class="faq-item">
+						<summary class="faq-summary">
+							<span>13. Are fuel and driver expenses included in the price?</span>
+							<span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+						</summary>
+						<div class="faq-content">
+							<p><strong>Yes. Our pricing includes driver fees and fuel.</strong> Any extras, like entrance tickets or accommodation for overnight trips, are discussed clearly upfront.</p>
+						</div>
+					</details>
+
+					<details class="faq-item">
+						<summary class="faq-summary">
+							<span>14. Why book with My Driver in Sri Lanka?</span>
+							<span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+						</summary>
+						<div class="faq-content">
+							<p>My Driver in Sri Lanka offers trusted, professional drivers, personalized itineraries, and a stress-free travel experience. We focus on slow, meaningful journeys, helping you explore the country safely and comfortably.</p>
+						</div>
+					</details>
+				</div>
 			</div>
 				
 				
@@ -1100,43 +1382,22 @@ Sam organised a driver and gave us good suggestions for our Sri Lanka trip. Prak
 
 	<footer class="et-l et-l--footer">
 			<div class="et_builder_inner_content et_pb_gutters3">
-		<div class="et_pb_section et_pb_section_0_tb_footer et_pb_with_background et_section_regular" >
-				
-				
-				
-				
-				
-				
-				<div class="et_pb_row et_pb_row_0_tb_footer et_pb_equal_columns et_pb_gutters2">
-				<div class="et_pb_column et_pb_column_2_3 et_pb_column_0_tb_footer  et_pb_css_mix_blend_mode_passthrough">
-				
-				
-				
-				
-				<div class="et_pb_module et_pb_text et_pb_text_0_tb_footer  et_pb_text_align_left et_pb_bg_layout_light">
-				
-				
-				
-				
-				<div class="et_pb_text_inner"><h1>Book your tour now!</h1></div>
+		<!-- Modern High-Converting CTA Banner -->
+		<div class="modern-cta-section">
+			<div class="modern-cta-card">
+				<div class="modern-cta-text">
+					<span class="modern-cta-tag">Start Your Sri Lankan Adventure</span>
+					<h2 class="modern-cta-title">Book your tour now!</h2>
+					<p class="modern-cta-desc">Enjoy slow, flexible journeys with verified English-speaking drivers, air-conditioned cars, and 100% transparent pricing.</p>
+				</div>
+				<div class="modern-cta-actions">
+					<a class="btn-primary-cta" href="./contact-us/">Plan Your Trip ➔</a>
+					<a class="btn-whatsapp-cta" href="https://wa.me/94772635814" target="_blank" rel="noopener">
+						<span>WhatsApp Us</span>
+					</a>
+				</div>
 			</div>
-			</div><div class="et_pb_column et_pb_column_1_3 et_pb_column_1_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
-				
-				
-				
-				
-				<div class="et_pb_button_module_wrapper et_pb_button_0_tb_footer_wrapper et_pb_button_alignment_right et_pb_button_alignment_tablet_center et_pb_button_alignment_phone_center et_pb_module ">
-				<a class="et_pb_button et_pb_button_0_tb_footer et_pb_bg_layout_light" href="./contact-us/">Book Now</a>
-			</div>
-			</div>
-				
-				
-				
-				
-			</div>
-				
-				
-			</div><div class="et_pb_section et_pb_section_1_tb_footer et_pb_with_background et_section_regular" >
+		</div><div class="et_pb_section et_pb_section_1_tb_footer et_pb_with_background et_section_regular" >
 				
 				
 				
